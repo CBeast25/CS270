@@ -1,0 +1,34 @@
+    file string.obj
+    memory OS_QUIET 1
+    memory Option 4
+    memory String1 x4000
+    memory x4000 x0041
+    memory x4001 x0042
+    memory x4002 x0043
+    memory x4003 x0064
+    memory x4004 x0000
+    memory String2 x4100
+    memory x4104 x0000
+    register R0 x0000
+    register R1 x0000
+    register R2 x0000
+    register R3 x0000
+    register R4 x0000
+    register R5 x0000
+    register R6 x0000
+    register R7 x0000
+    break set x302A
+    continue
+    register PC x302B
+    next
+    next
+    next
+    print R0
+    translate x4100
+    translate x4101
+    translate x4102
+    translate x4103
+    translate x4104
+    break set x3030
+    continue
+    quit
